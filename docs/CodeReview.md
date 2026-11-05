@@ -1,11 +1,11 @@
 | |                                 |
 |---|---------------------------------|
 | **Gruppen, der reviewes** | *Gruppe 8*                      |
-| **GitHub repository** | *url*                           |
-| **Commit hash** (7 tegn) |                                 |
-| **Reviewer-gruppen** | *gruppens navn eller medlemmer* |
+| **GitHub repository** | https://github.com/Visar122/FilmSamling     |
+| **Commit hash** (7 tegn) |       aabd37a    |
+| **Reviewer-gruppen** | Grupp 5 Carl Westerlind, Mathias Sand, Salem Lokende, Tjark-Finn Paterson | 
 | **Runde** | 1 eller 2                       |
-| **Dato** |                                 |
+| **Dato** |             06-11-2026                    |
 
 ### Sådan læses skemaet
 

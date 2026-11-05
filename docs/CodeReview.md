@@ -22,13 +22,13 @@
 
 Før I kigger på koden, så kig på, hvad der ellers ligger i repositoriet.
 
-* [ ] Er der en `.gitignore`-fil?
-* [ ] 💣 Er der uvedkommende filer i GitHub (fx `target`-mappen, `.class`-filer, `movies.csv`)?
-* [ ] Er der en `README.md` med fornavn og GitHub-brugernavn på hvert medlem og en forklaring på,
+* [x] Er der en `.gitignore`-fil?
+* [x] 💣 Er der uvedkommende filer i GitHub (fx `target`-mappen, `.class`-filer, `movies.csv`)?
+* [x] Er der en `README.md` med fornavn og GitHub-brugernavn på hvert medlem og en forklaring på,
   hvordan man kører programmet?
-* [ ] Ligger dokumentation og andet ikke-kode i en `docs`-mappe – både klassediagram og
+* [] Ligger dokumentation og andet ikke-kode i en `docs`-mappe – både klassediagram og
   `furps.md` (mindst ét krav pr. bogstav)?
-* [ ] Passer klassediagrammet med koden?
+* [x] Passer klassediagrammet med koden?
 * [ ] Viser historikken commits fra **alle** i gruppen?
 * [ ] Er commit-beskederne til at forstå – kan man se, hvad hver commit gjorde?
 
@@ -36,9 +36,9 @@ Før I kigger på koden, så kig på, hvad der ellers ligger i repositoriet.
 
 ## Kør programmet og testene
 
-* [ ] Kan projektet åbnes og kompileres uden fejl?
-* [ ] Starter programmet, også når der ingen `movies.csv` er?
-* [ ] Er **alle** tests grønne? *Antal tests:*
+* [X] Kan projektet åbnes og kompileres uden fejl?
+* [X] Starter programmet, også når der ingen `movies.csv` er?
+* [ ] Er **alle** tests grønne? *Antal tests: 1 test fejler*
 * [ ] 💣 Går programmet ned, hvis man skriver bogstaver, hvor der skal stå et tal?
 
 ---
@@ -48,11 +48,11 @@ Før I kigger på koden, så kig på, hvad der ellers ligger i repositoriet.
 Der bør være tre packages under `src/main/java`: `ui`, `domainmodel` og `datasource` (eller
 lignende navne).
 
-* [ ] Er der tre packages med sigende navne?
-* [ ] Er det let at regne ud, hvilken rolle hver package har?
-* [ ] Ligger hver klasse i den package, der passer til dens ansvar?
+* [x] Er der tre packages med sigende navne?
+* [x] Er det let at regne ud, hvilken rolle hver package har?
+* [x] Ligger hver klasse i den package, der passer til dens ansvar?
 * [ ] 💣 Importerer en klasse i `domainmodel` eller `datasource` noget fra `ui`?
-* [ ] Ligger testene i packages med samme navne under `src/test/java`?
+* [x] Ligger testene i packages med samme navne under `src/test/java`?
 
 ---
 
@@ -67,9 +67,9 @@ Comparator-klasserne har deres eget afsnit længere nede.
 
 ### Klassen: `-navn-`
 
-* [ ] Er klassen godt navngivet?
-* [ ] Er det let at regne ud, hvilken rolle klassen har?
-* [ ] Er der brugt tydelig ental/flertal for at vise, om klassen indeholder ét eller flere
+* [x] Er klassen godt navngivet?
+* [x] Er det let at regne ud, hvilken rolle klassen har?
+* [x] Er der brugt tydelig ental/flertal for at vise, om klassen indeholder ét eller flere
   underobjekter?
 * [ ] 💣 Er der `System.out` eller `Scanner` i klassen, selv om den ikke er `UserInterface`?
 
@@ -80,15 +80,15 @@ Comparator-klasserne har deres eget afsnit længere nede.
 
 **Er attributter navngivet godt?**
 
-* [ ] Er navnene selvforklarende?
-* [ ] Er navnene fra "problemdomænet"?
-* [ ] Er navnene tydeligt og korrekt ental eller flertal?
-* [ ] Er navnene alle på samme sprog (engelsk)?
+* [x] Er navnene selvforklarende?
+* [x] Er navnene fra "problemdomænet"?
+* [x] Er navnene tydeligt og korrekt ental eller flertal?
+* [x] Er navnene alle på samme sprog (engelsk)?
 
 **Har attributter korrekt access?**
 
-* [ ] Er der brugt `private`?
-* [ ] Er der getter og setter (hvis nødvendigt)?
+* [x] Er der brugt `private`?
+* [x] Er der getter og setter (hvis nødvendigt)?
 * [ ] 💣 Er attributter gjort `public` uden getter og setter?
 * [ ] 💣 Er der hverken brugt `private` eller `public`, men bare "ingenting"?
 
@@ -107,17 +107,17 @@ Kig på hver metode, først "udefra", altså uden at læse koden inde i metodern
 
 **Er metoder navngivet godt?**
 
-* [ ] Er navnene selvforklarende?
-* [ ] Er navnene fra "problemdomænet"?
-* [ ] Er det tydeligt, hvad hver metode gør, ud fra sit navn?
-* [ ] Er det tydeligt nok ud fra navnet, om metoder returnerer eller modtager værdier?
-* [ ] Hvis metoden modtager parametre, er det så umiddelbart til at regne ud, hvad de er til, ud fra
+* [x] Er navnene selvforklarende?
+* [x] Er navnene fra "problemdomænet"?
+* [x] Er det tydeligt, hvad hver metode gør, ud fra sit navn?
+* [x] Er det tydeligt nok ud fra navnet, om metoder returnerer eller modtager værdier?
+* [x] Hvis metoden modtager parametre, er det så umiddelbart til at regne ud, hvad de er til, ud fra
   navngivningen?
-* [ ] Hvis metoden returnerer en værdi, giver datatypen så umiddelbar mening?
-* [ ] Er der en fornuftig ensartethed/struktur i navngivningen af metoderne?
+* [x] Hvis metoden returnerer en værdi, giver datatypen så umiddelbar mening?
+* [x] Er der en fornuftig ensartethed/struktur i navngivningen af metoderne?
 * [ ] Er metodenavnene navngivet med korrekt brug af `camelCase`?
 * [ ] Er parameternavne navngivet med korrekt brug af `camelCase`?
-* [ ] Er navnene alle på samme sprog (engelsk)?
+* [x] Er navnene alle på samme sprog (engelsk)?
 * [ ] 💣 Er der metoder, der gør to ting – fx både finder noget og udskriver det?
 
 #### Kode
@@ -127,16 +127,16 @@ metode, men kigge på metoderne som helhed og notere, hvis der er et sted, der a
 
 **Lokale variabler inde i metoder**
 
-* [ ] Er variabler navngivet korrekt `camelCase`?
-* [ ] Er variablernes navne i tilstrækkelig grad fra "problemdomænet"?
-* [ ] Er variablerne erklæret, hvor de skal bruges?
-* [ ] Har variablerne den korrekte datatype?
-* [ ] Er navnene alle på samme sprog (engelsk)?
+* [x] Er variabler navngivet korrekt `camelCase`?
+* [x] Er variablernes navne i tilstrækkelig grad fra "problemdomænet"?
+* [x] Er variablerne erklæret, hvor de skal bruges?
+* [x] Har variablerne den korrekte datatype?
+* [x] Er navnene alle på samme sprog (engelsk)?
 
 **Generel kodestil**
 
-* [ ] Er koden pænt (og korrekt) formateret med indrykninger etc.?
-* [ ] Er koden "skimbar" og umiddelbart let at overskue, uden at skulle nærlæse hver linje?
+* [x] Er koden pænt (og korrekt) formateret med indrykninger etc.?
+* [x] Er koden "skimbar" og umiddelbart let at overskue, uden at skulle nærlæse hver linje?
 * [ ] 💣 Er der smarte "ninja-tricks", der gør koden kompakt, men måske sværere for nogle at læse?
 * [ ] 💣 Er der kode, der er kopieret flere steder, og som burde være én metode?
 
@@ -144,12 +144,12 @@ metode, men kigge på metoderne som helhed og notere, hvis der er et sted, der a
 
 * [ ] Bliver exceptions fanget dér, hvor man ved, hvad brugeren skal have at vide (typisk
   `UserInterface`)?
-* [ ] Bliver ugyldige værdier afvist med en `throw` og en forklarende besked?
+* [x] Bliver ugyldige værdier afvist med en `throw` og en forklarende besked?
 * [ ] 💣 Bliver exceptions blot håndteret med en tom `catch` eller en `catch` med `printStackTrace`?
 * [ ] 💣 Bliver `NullPointerException` eller `IndexOutOfBoundsException` fanget, hvor en `if` burde
   have forhindret dem?
-* [ ] Kan programmet fortsætte efter en exception?
-* [ ] Er der lavet egne exception-typer – og giver de bedre mening end de indbyggede?
+* [x] Kan programmet fortsætte efter en exception?
+* [] Er der lavet egne exception-typer – og giver de bedre mening end de indbyggede?
 
 #### Kommentarer
 
@@ -170,10 +170,10 @@ Ud over spørgsmålene under *Klasser*:
 
 * [ ] Er al læsning og skrivning af filen samlet i `FileHandler`?
 * [ ] 💣 Ved andre klasser end `FileHandler` noget om filformatet (fx semikolon eller feltrækkefølge)?
-* [ ] Bliver filen lukket (`close()`) efter læsning og skrivning?
-* [ ] Overlever alle felter en tur gennem filen – også æ, ø, å og datoen?
-* [ ] Går programmet videre, hvis en linje i filen er ødelagt?
-* [ ] Skrives filen kun, når der er ændringer?
+* [x] Bliver filen lukket (`close()`) efter læsning og skrivning?
+* [x] Overlever alle felter en tur gennem filen – også æ, ø, å og datoen?
+* [x] Går programmet videre, hvis en linje i filen er ødelagt?
+* [x] Skrives filen kun, når der er ændringer?
 
 ---
 
@@ -182,25 +182,25 @@ Ud over spørgsmålene under *Klasser*:
 Reviewes samlet. Hver comparator bør have et navn med den egenskab, den sammenligner, og ordet
 `Comparator` – fx `YearComparator`.
 
-* [ ] Er klasserne godt navngivet?
-* [ ] Er der brugt `@Override` på `compare` (og på `compareTo` i `Movie`)?
-* [ ] Er `compare` implementeret med `compareTo`/`compareToIgnoreCase` eller `Integer.compare` –
+* [x] Er klasserne godt navngivet?
+* [x] Er der brugt `@Override` på `compare` (og på `compareTo` i `Movie`)?
+* [x] Er `compare` implementeret med `compareTo`/`compareToIgnoreCase` eller `Integer.compare` –
   i stedet for egne `if`-sætninger, der returnerer `-1`, `0` og `1`?
 * [ ] Kan koden i `compare` simplificeres?
-* [ ] Er der kun **ét** sted i koden, der vælger comparator ud fra brugerens valg?
+* [x] Er der kun **ét** sted i koden, der vælger comparator ud fra brugerens valg?
 * [ ] 💣 Ændrer sorteringen rækkefølgen i selve samlingen?
 
 ---
 
 ## Tests
 
-* [ ] Er der en testklasse for hver klasse med logik (`Movie`, `MovieCollection`, `FileHandler`,
+* [x] Er der en testklasse for hver klasse med logik (`Movie`, `MovieCollection`, `FileHandler`,
   comparatorerne)?
-* [ ] Er testmetodernes navne sigende – kan man se, hvad der testes, uden at læse koden?
-* [ ] Følger testene Arrange – Act – Assert?
-* [ ] Er de "kedelige" tilfælde testet: tom samling, ingen match, en film, der ikke findes?
-* [ ] Er grænserne testet – fx årstal 1887/1888, en dato præcis på grænsen?
-* [ ] Er det testet, at ugyldige værdier afvises (`assertThrows`)?
+* [x] Er testmetodernes navne sigende – kan man se, hvad der testes, uden at læse koden?
+* [x] Følger testene Arrange – Act – Assert?
+* [x] Er de "kedelige" tilfælde testet: tom samling, ingen match, en film, der ikke findes?
+* [x] Er grænserne testet – fx årstal 1887/1888, en dato præcis på grænsen?
+* [x] Er det testet, at ugyldige værdier afvises (`assertThrows`)?
 * [ ] 💣 Afhænger testene af hinanden eller af den rækkefølge, de køres i?
 * [ ] 💣 Afhænger testene af dagens dato, så de kan blive røde i morgen?
 * [ ] 💣 Kan testene komme til at overskrive eller slette den rigtige `movies.csv`?
@@ -215,8 +215,10 @@ særligt elegant kode, spørgsmål til, hvordan programmørerne fandt på en lø
 
 **Det er særlig godt:**
 
+Meget godt.
+
 **De tre vigtigste ting at rette:**
 
-1.
-2.
-3.
+1. 	Der er mange klasser fra UserInterface som ikke har den korrekt brug af `camelCase`. Også en method fra Controller
+2. 	Inde i Controller.editMovie, er der en variable der bliver erklæderet, som hedder ok. Vi var ikke sikker hvilken rolle den havde i metoden.
+3.  Bruge flere kommentarer
